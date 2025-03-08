@@ -1,0 +1,6 @@
+<app-header></app-header>
+<router-outlet (activate)="isEmpty = false" (deactivate)="isEmpty = true"></router-outlet>
+@if(isEmpty){
+    <img src="../../assests/images/background.jpg" alt="No content available" class="no-content-image">
+
+}

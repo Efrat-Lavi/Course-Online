@@ -1,0 +1,27 @@
+.course-details-card {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #f5f5f5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  mat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .enroll-button {
+    width: 100%;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .menu-button {
+    color: black;
+  }
+  

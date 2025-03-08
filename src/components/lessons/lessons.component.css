@@ -1,0 +1,66 @@
+/* עיצוב העמוד */
+.courses-page {
+    position: relative;
+    padding: 20px;
+  }
+  
+  /* כפתור הוספת קורס - ממוקם בצד ימין */
+  .add-course-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* עיצוב הרשימה */
+  .courses-container {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 60px; /* השארת מקום לכפתור */
+  }
+  
+  /* עיצוב כל כרטיס קורס */
+  .course-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    border-left: 6px solid #2196f3;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* אנימציה קלה בהובר */
+  .course-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* עיצוב אוואטר */
+  .course-avatar {
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .custom-btn {
+    background-color: #f8f8fc; /* רקע בהיר */
+    /* color: blue; צבע טקסט כחול */
+    border-radius: 30px; /* פינות מעוגלות */
+    padding: 10px 20px; /* ריווח פנימי */
+    font-size: 16px; /* גודל טקסט */
+    font-weight: bold; /* טקסט מודגש */
+    text-transform: none; /* ללא אותיות גדולות */
+    box-shadow: none; /* בלי צל מיותר */
+    border: none;
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* אנימציה בלחיצה */
+  .custom-btn:hover {
+    background-color: #eeeeff;
+    transform: scale(1.05);
+  }
+  
+  

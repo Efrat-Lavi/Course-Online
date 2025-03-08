@@ -1,0 +1,26 @@
+<mat-card class="form-container">
+    <mat-card-title>הוספת קורס</mat-card-title>
+    <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>כותרת</mat-label>
+            <input matInput formControlName="title" required>
+            @if(courseForm.get('title')?.invalid){
+            <mat-error >
+                יש להזין כותרת עם לפחות 3 תווים
+            </mat-error>}
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>תיאור</mat-label>
+            <textarea matInput formControlName="description" rows="4" required></textarea>
+            @if (courseForm.get('description')?.invalid) {
+            <mat-error>
+                יש להזין תיאור עם לפחות 10 תווים
+            </mat-error>}
+        </mat-form-field>
+
+        <button mat-raised-button color=" primary" type="submit" [disabled]="courseForm.invalid">
+            הוספת קורס
+        </button>
+    </form>
+</mat-card>

@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="header-toolbar">
+  @if(!isLogded()){
+  <button mat-raised-button color="accent" (click)="openLoginDialog()">Log In</button>
+  <button mat-raised-button color="warn" (click)="openSignupDialog()">Sign Up</button>
+  }
+
+  @else{
+  <button mat-raised-button color="accent" (click)="logout()">Log Out</button>
+  <span class="spacer"></span>
+
+  <span class="spacer"></span>
+  <a appDirective [text]="'All Courses'" mat-button routerLink="/courses">All Courses</a>
+  @if(isAdmin()){
+  <a mat-button routerLink="/users">Users</a>
+  }}
+</mat-toolbar>

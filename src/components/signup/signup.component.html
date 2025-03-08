@@ -1,0 +1,57 @@
+<!-- <h2 mat-dialog-title>הרשמה</h2>
+<mat-dialog-content>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>שם מלא</mat-label>
+      <input matInput formControlName="name" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>אימייל</mat-label>
+      <input matInput formControlName="email" type="email" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>סיסמה</mat-label>
+      <input matInput formControlName="password" type="password" required>
+    </mat-form-field>
+
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close>ביטול</button>
+      <button mat-flat-button color="primary" type="submit" [disabled]="signupForm.invalid">הרשם</button>
+    </div>
+  </form>
+</mat-dialog-content> -->
+<h2 mat-dialog-title>Sign Up</h2>
+<mat-dialog-content>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Full Name</mat-label>
+      <input matInput formControlName="name" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" type="password" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Role</mat-label>
+      <mat-select formControlName="role" required>
+        <mat-option value="teacher">Teacher</mat-option>
+        <mat-option value="admin">Admin</mat-option>
+        <mat-option value="student">Student</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close>Cancel</button>
+      <button mat-flat-button color="primary" type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+    </div>
+  </form>
+</mat-dialog-content>

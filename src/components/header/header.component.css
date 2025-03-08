@@ -1,0 +1,51 @@
+/* mat-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .active-link {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+   */
+   .header-toolbar {
+    background-color: #212121; /* שחור */
+    color: white;
+  }
+  
+  mat-toolbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  mat-toolbar a:hover {
+    text-decoration: underline;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
