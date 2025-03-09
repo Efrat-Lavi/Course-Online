@@ -29,14 +29,15 @@ export class CourseDetailsComponent {
     private userService: UserService, private course_studentsService: CourseStudentsService,
     private authService: AuthService, private router: Router
   ) {
-    this.userService.user$.subscribe(user=>this.user=user);
+    this.userService.user$.subscribe(
+      user=>{this.user=user;
     console.log('User:', this.user.id);
     
     const courseId = this.route.snapshot.paramMap.get('id');
     this.id = courseId ? +courseId : 0;
     console.log('courseId:', courseId);
     this.loadCourse(this.id);
-    this.isEnrollf();
+    this.isEnrollf();});
   }
   loadCourse(courseId:number) {
     if (courseId) {
